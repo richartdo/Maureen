@@ -1,0 +1,101 @@
+.custom-image{
+    border-radius: 50%;
+}
+
+.custom-heroes{
+    background-color: pink;
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 60px;
+
+}
+
+.custom-text{
+    color: blue;
+    font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.custom-paragraph{
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+body{
+    background-color: #F60C86;
+}
+
+/* General styles */
+
+
+/* Fixed Header */
+header {
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .form-control {
+    max-width: 200px;
+}
+
+header a,
+header button {
+    color: #fff;
+}
+
+
+
+/* Spacing for content to avoid overlap with fixed header */
+body > *:not(header) {
+    margin-top: 80px;
+}
+
+
+
+.custom-image {
+    border-radius: 50%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header .form-control {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-heroes .custom-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    header .container {
+        flex-direction: row;
+    }
+}
+
+  
